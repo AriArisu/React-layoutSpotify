@@ -8,7 +8,7 @@ export default function DetalhesArtista() {
     useEffect(() => {
             const puxarArtista = async () => {
         try{
-            const artista = await fetch(`react-layout-spotify-nvgq.vercel.app`);
+            const artista = await fetch(`react-layout-spotify-nvgq.vercel.app${id}`);
             const resposta = await artista.json();
             setArtista(resposta);
             }
