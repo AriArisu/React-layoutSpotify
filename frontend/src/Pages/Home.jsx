@@ -12,7 +12,7 @@ function Home() {
     const [isLoading,setIsLoading] = useState(false);
   
     useEffect(() => {
-      fetch('http://localhost:3000/artistas')
+      fetch('https://react-layout-spotify-nvgq.vercel.app')
       .then (res => res.json())
       .then (data => setArtistas(data))
       .catch (err => console.log(err))
